@@ -57,11 +57,3 @@ def organize_class_methods(cls) -> str:
             new_source_lines.extend(method_lines)
     
     return '\n'.join(new_source_lines)
-
-
-# Example usage:
-if __name__ == "__main__":
-    from yourmodule import yourclass
-    organized = organize_class_methods(yourclass)
-    with open("yournewAhhClass.py", "w", encoding="utf-8") as fo:
-        fo.write(organized)
